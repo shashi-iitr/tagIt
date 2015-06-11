@@ -1,0 +1,21 @@
+{
+	"manifest_version" : 2,
+
+	"name": "Tag it",
+	"description": "This extension tags the website you want to tag for future purpose.",
+	"version": "1.0",
+	"background": {
+        "scripts": ["tagit.js"],
+        "persistent": false
+    },
+
+	"browser_action": {
+		"default_icon": "tag.png",
+		"default_popup": "tagit.html"
+	},
+	"permissions": [
+		"tabs", 
+        "http://*/*", 
+        "https://*/*"
+	]
+}

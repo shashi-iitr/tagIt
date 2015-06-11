@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tag your favorite sites</title>
+		<link rel="stylesheet" href="tagit.css">
+	</head>
+	<body>
+		<div class="tag">
+			<label>Tag it</label>
+		</div>
+		<div class="context">
+			<label for="pageTitle">Title:</label>
+			<input id="pageTitle" name="pageTitle" placeholder="Title" type="text">
+		</div>
+		<div class="context">
+			<form>
+				<label for="categoryList">Category:</label>
+				<input list="categoryList" name="categoryList" id="category" placeholder="Type or select category">
+				<datalist id="categoryList">
+					<option value="Internet Explorer">
+					<option value="Firefox">
+					<option value="Google Chrome">
+					<option value="Opera">
+					<option value="Safari">
+				</datalist>
+			</form>
+		</div>
+		<div>
+			<input type="submit" value="remove" id="remove">
+		</div>
+		<div>
+			<input type="submit" value="my tags" id="tags">
+		</div>
+		<div>
+			<input type="submit" value="done" id="done">
+		</div>
+		<!-- // <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script> -->
+		<script src="tagit.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
